@@ -60,6 +60,10 @@ nav {
     color: var(--anchor-text);
 }
 
+.menu-bar {
+    display: none;
+}
+
 .banner-container {
     display: flex;
     flex-direction: column;
@@ -92,4 +96,40 @@ nav {
 
 .banner-image img {
     max-width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+    .nav-menu {
+        display: none;
+    }
+    nav {
+        padding: 1rem;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .nav-title {
+        font-size: 1.5rem;
+    }
+    .banner-content {
+        padding: 2rem;
+    }
+    .banner-title {
+        font-size: 2.75rem;
+    }
+    .banner-image {
+        margin: 1.5rem;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
+        padding: 1.5rem 3rem;
+    }
+    .banner-content {
+        padding: 2rem 7rem;
+    }
+    .nav-title {
+        font-size: 2rem;
+    }
 }
